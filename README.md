@@ -10,7 +10,7 @@ Small C++ client/server project using **SFML** and **WinSock** to synchronize th
 
 ![Preview](assets/BallGreview_preview.png)
 
-![Preview](assets/BallGreview_video.mp4)
+[Watch demo video](assets/BallGreview_video.mp4)
 
 ## Features
 
