@@ -1,2 +1,1 @@
-cd ../..
-SolutionGen.exe -make 1000Tplat Client
+SolutionGen.exe -make ../../BallGreview Client

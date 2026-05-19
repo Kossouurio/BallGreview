@@ -29,10 +29,10 @@ int main()
     server.sin_port = htons(9999);
 
     /// AFFICHAGE
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Client");
+    sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Client");
     sf::CircleShape ball(25.f);
     ball.setFillColor(sf::Color::Green);
-    ball.setPosition(100.f, 100.f);
+    ball.setPosition({ 100.f, 100.f });
     sf::Vector2f direction(100.f, 100.f);
 
     sf::Clock clock;
@@ -41,10 +41,12 @@ int main()
     {
         std::cout << "x: " << ball.getPosition().x << ", y: " << ball.getPosition().y << std::endl;
 
-        sf::Event event;
-        while (window.pollEvent(event))
+        while (const std::optional event = window.pollEvent())
         {
-            if (event.type == sf::Event::Closed) window.close();
+            if (event->is<sf::Event::Closed>())
+            {
+                window.close();
+            }
         }
 
         sf::Time deltaTime = clock.restart();

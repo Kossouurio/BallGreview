@@ -45,7 +45,7 @@ void handleClient(SOCKET server)
 int main()
 {
 	/// AFFICHAGE
-	sf::RenderWindow window(sf::VideoMode(800, 600), "Server");
+	sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "Server");
 	sf::CircleShape ball(25.f);
 	ball.setFillColor(sf::Color::Red);
 	ball.setPosition(position);
@@ -88,10 +88,12 @@ int main()
 	/// AFFICHAGE
 	while (window.isOpen())
 	{
-		sf::Event event;
-		while (window.pollEvent(event))
+		while (const std::optional event = window.pollEvent())
 		{
-			if (event.type == sf::Event::Closed) window.close();
+			if (event->is<sf::Event::Closed>())
+			{
+				window.close();
+			}
 		}
 
 		ball.setPosition(position);

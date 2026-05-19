@@ -1,2 +1,1 @@
-cd ../..
-SolutionGen.exe -make 1000Tplat Server -clear
+SolutionGen.exe -make ../../BallGreview Server -clear
