@@ -10,7 +10,10 @@ Small C++ client/server project using **SFML** and **WinSock** to synchronize th
 
 ![Preview](assets/BallGreview_preview.png)
 
-[Watch demo video](assets/BallGreview_video.mp4)
+![](assets/BallGreview_video.mp4)
+<video width="320" height="240" controls>
+  <source src="assets/BallGreview_video.mp4" type="video/mp4">
+</video>
 
 ## Features
 
