@@ -8,9 +8,9 @@ Small C++ client/server project using **SFML** and **WinSock** to synchronize th
 - **Server**: receives the position sent by the client and displays a synchronized red ball.
 - **Communication**: local UDP socket on port `9999`.
 
-![Preview](assets/BallGreview_preview.png)
+![Preview](assets/preview.png)
 
-[Watch demo video](assets/BallGreview_video.mp4)
+[Watch demo video](assets/video_preview.mp4)
 
 ## Features
 
