@@ -1,2 +1,1 @@
-https://www.youtube.com/embed/69tVARqTIkc
-
+https://youtu.be/embed/69tVARqTIkc
